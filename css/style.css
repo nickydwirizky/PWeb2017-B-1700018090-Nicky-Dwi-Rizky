@@ -1,0 +1,158 @@
+/*ini bagian atas atau header */ 
+.wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.containerr{
+
+}
+
+.header{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background: #5F9EA0;
+}
+
+.topnav {
+    background-color: #5F9EA0;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+.content{
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    font-size: 20px;
+    color: #5F9EA0;
+    font-family:'Sacramento', cursive;
+}
+.about{
+    font-size: 20px;
+    font-family: "times new roman", times,serif;
+    color: black;
+    background-color: white;
+}
+/*.form{
+    display: grid;
+    grid-template-columns: 200px 1 fr;
+}*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5F9EA0;
+    color: white;
+    text-align: center;
+}
+input {
+    
+    color: black;
+    padding: 10px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 30;
+}
+.button {
+    background-color: #5F9EA0; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+	.button1 {
+		font-size: 10px;
+	}
+/*ini bagian input form*/
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 20px 20px 20px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #5F9EA0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.col-25 {
+    float: left;
+    width:15%;
+    margin-top: 3px;
+}
+
+.col-75 {
+    float: left;
+    width: 45%;
+    margin-top: 3px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
